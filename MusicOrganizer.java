@@ -6,6 +6,67 @@ import java.util.ArrayList;
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  */
+
+
+/**
+ * 24)
+ * 25)public void listMatching(String searchString)
+    {
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+            }
+        }
+    }
+ * 
+ * 26)
+ * 27)
+ * 28)Track
+ * 29) boolean found = false;
+ while(found) {
+ if(the keys are in the next place) {
+             found = true
+         }
+     }
+ * 30) public class MultipleofFive {
+ *              public void multipleOfFive() {
+ *                     int num = 10;
+ *                     
+ *                     while (num <= 95) {
+ *                         System.out.println(num);
+ *                         num += 5;
+         }
+     }
+ }
+ * 31) public class sumOfNumbers {
+ *          public void sumOfNumbers() {
+ *              int sum = 0;
+ *              int num = 1;
+ *              
+ *              
+ *              while (num <= 10) {
+ *                  sum +=num:
+ *                  num++;
+         }
+     }
+ }
+ * 32)public class SumBetweenNumbers {
+    public static int sum(int a, int b) {
+        int total = 0; 
+        int num = a;   
+
+        while (num <= b) { 
+            total += num;  
+            num++;         
+        }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
 public class MusicOrganizer
 {
     // An ArrayList for storing the file names of music files.
@@ -51,6 +112,25 @@ public class MusicOrganizer
             System.out.println(filename);
         }
     }
+    
+    public void listMatching(String searchString)
+    {
+        boolean foundMatch = false;
+        for(String filename : files) {
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+                foundMatch = true;
+            }
+        }
+        if(!foundMatch){
+            System.out.println("No files matched the search string: " + searchString);
+            
+        }
+        
+    }
+    
+    
+    
     
     /**
      * Show a list of all the files in the collection.
